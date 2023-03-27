@@ -10,13 +10,13 @@ create table Partida(nome_mapa varchar(30), tempo int, ponto_vida int,
                      objetivo varchar(30));
                       
 create table Cosmetico(nome_cosmetico varchar(20), preço int, 
-                       categoria varchar(15), raridade varchar(15)
-                      primary key(nome_cosmetico));  
+                       categoria varchar(15), raridade varchar(15),
+                       primary key(nome_cosmetico));  
                         
 create table Heróis(nome_herói varchar(30), classe varchar(25),
-                    saúde int, escudo int), primary key(nome_herói);
+                    saúde int, escudo int, primary key(nome_herói));
                     
 create table Habilidade(nome_herói varchar(30), nome_habilidade varchar(40),
-                        dano int, cura int, defesa int, tempo_recarga int),
-                        primary key(nome_habilidade);
+                        dano int, cura int, defesa int, tempo_recarga int,
+                        primary key(nome_habilidade));
                       
