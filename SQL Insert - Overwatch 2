@@ -14,4 +14,4 @@ insert into Partida values('italia', 7, 3, 'mata-mata'),
 						  ('brasil', 5, 4, 'competitivo');
                           
 insert into Ranque values('luke', 3, 'indeterminado', 'indeterminado', 'ouro'),
-						 ('sara', 2, 'indeterminado', 'platina', 'indeterminado');
+						 ('sara', 3, 'indeterminado', 'platina', 'indeterminado');
