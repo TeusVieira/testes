@@ -1,19 +1,22 @@
 create table Jogador(nome varchar(15), grupos varchar(25), 
-                     amigos int, creditos int);
+                     amigos int, creditos int, primary key(nome));
 
-create table Ranque(nome_jogador varchar(15), temporada int, 
-                    ranq_sup varchar(15),
-                    ranq_dano varchar(15), ranq_tank varchar(15));
+create table Ranque(nome_jogador varchar(15), temporada int, ranq_sup varchar(15),
+                    ranq_dano varchar(15), ranq_tank varchar(15), primary key(temporada),
+                    foreign key(nome_jogador) references Jogador(nome)
+                    on delete cascade on update cascade);
                      
 create table Partida(nome_mapa varchar(30), tempo int, ponto_vida int,
                      objetivo varchar(30));
                       
 create table Cosmetico(nome_cosmetico varchar(20), preço int, 
-                       categoria varchar(15), raridade varchar(15));  
+                       categoria varchar(15), raridade varchar(15)
+                      primary key(nome_cosmetico));  
                         
 create table Heróis(nome_herói varchar(30), classe varchar(25),
-                    saúde int, escudo int);
+                    saúde int, escudo int), primary key(nome_herói);
                     
 create table Habilidade(nome_herói varchar(30), nome_habilidade varchar(40),
-                        dano int, cura int, defesa int, tempo_recarga int);
+                        dano int, cura int, defesa int, tempo_recarga int),
+                        primary key(nome_habilidade);
                       
