@@ -2,7 +2,7 @@ create table Jogador(nome varchar(15), grupos varchar(25),
                      amigos int, creditos int, primary key(nome));
 
 create table Ranque(nome_jogador varchar(15), temporada int, ranq_sup varchar(15),
-                    ranq_dano varchar(15), ranq_tank varchar(15), primary key(temporada),
+                    ranq_dano varchar(15), ranq_tank varchar(15),
                     foreign key(nome_jogador) references Jogador(nome)
                     on delete cascade on update cascade);
                      
