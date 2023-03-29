@@ -20,3 +20,4 @@ create table Habilidade(nome_herói varchar(30), nome_habilidade varchar(40),
                         dano int, cura int, defesa int, tempo_recarga int,
                         primary key(nome_habilidade));
                       
+a
