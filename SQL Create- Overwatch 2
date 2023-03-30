@@ -18,7 +18,6 @@ create table Herois(id_heroi varchar(30), classe varchar(25),
                     
 create table Habilidade(nome_heroi varchar(30), nome_habilidade varchar(40),
                         dano int, cura int, defesa int, tempo_recarga int,
-                        primary key(nome_habilidade));
+                        primary key(nome_habilidade), foreign key(nome_heroi) references Herois(id_heroi) 
+                        on delete cascade on update cascade);
                         
-alter table Habilidade add foreign key(nome_heroi) references Herois(id_heroi) 
-                        on delete cascade on update cascade;
