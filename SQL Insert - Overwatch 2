@@ -1,11 +1,11 @@
 insert into Cosmetico values('samba', 1200, 'skin', 'epica'),
 							('assasina', 600, 'pose', 'rara');
                             
+insert into Herois values('reaper', 'dano', 200, 0),
+					     ('mercy', 'suporte', 200, 0);                            
+                            
 insert into Habilidade values('reaper', 'explosao', 250, 0, 40, 100),
 							 ('mercy', 'raposa', 0, 70, 0, 100);
-
-insert into Herois values('reaper', 'dano', 200, 0),
-					     ('mercy', 'suporte', 200, 0);
                          
 insert into Jogador values('luke', 'qota', 5, 1300),
 						  ('sara', 'qota', 3, 2200);
@@ -15,4 +15,3 @@ insert into Partida values('italia', 7, 3, 'mata-mata'),
                           
 insert into Ranque values('luke', 3, 'indeterminado', 'indeterminado', 'ouro'),
 						 ('sara', 3, 'indeterminado', 'platina', 'indeterminado');
-                        
