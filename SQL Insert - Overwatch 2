@@ -15,3 +15,6 @@ insert into Partida values('italia', 7, 3, 'mata-mata'),
                           
 insert into Ranque values('luke', 3, 'indeterminado', 'indeterminado', 'ouro'),
 						 ('sara', 3, 'indeterminado', 'platina', 'indeterminado');
+                         
+insert into Inventario values('0', 'skin', 'samba', 'luke'),
+							 ('1', 'pose', 'assasina', 'sara');
