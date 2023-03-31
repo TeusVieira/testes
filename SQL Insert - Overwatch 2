@@ -34,8 +34,13 @@ INSERT into Jogador VALUES ("Lixuzera","BCC",0,1700),
                            ("alvaro","BCC", 7, 2400);
                            
                           
-insert into Partida values('italia', 7, 3, 'mata-mata'),
-						  ('brasil', 5, 4, 'competitivo');
+INSERT INTO Partida VALUES ("Ayutthaya",000,3,"Capture a bandeira"),
+							("Black desert",000,4,"Eliminação"),
+                            ("Castillo",000,3,"Eliminação"),
+                            ("Château Guillard",0000,3,"Combate até morrer"),
+                            ("Kanezaka",000,6,"Combate até morrer"),
+                            ("Malevento", 000, 7, "Combate até morrer em equipe"),
+                            ("Petra", 000, 6, "Combate até morrer em equipe")
                           
 insert into Ranque values('luke', 3, 'indeterminado', 'indeterminado', 'ouro'),
 						 ('sara', 3, 'indeterminado', 'platina', 'indeterminado');
