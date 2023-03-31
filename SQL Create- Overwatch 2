@@ -21,3 +21,6 @@ create table Habilidade(nome_heroi varchar(30), nome_habilidade varchar(40),
                         primary key(nome_habilidade), foreign key(nome_heroi) references Herois(id_heroi) 
                         on delete cascade on update cascade);
                         
+create table Inventario(id_inventario varchar(35), itens varchar(15), nome_usuario varchar(15),
+                        primary key(id_inventario), foreign key(nome_usuario) references Jogador(nome)
+                        on delete cascade on update cascade);
