@@ -1,8 +1,25 @@
 insert into Cosmetico values('samba', 1200, 'skin', 'epica'),
 							('assasina', 600, 'pose', 'rara');
                             
-insert into Herois values('reaper', 'dano', 200, 0),
-					     ('mercy', 'suporte', 200, 0);                            
+INSERT into Herois VALUES ("D.VA", "TANQUE", 150, 300),
+                          ("DOOMFIST","TANQUE",450,0),
+                          ("JUNKER QUEEN", "TANQUE", 450, 0),
+                          ("ORISA", "TANQUE", 275, 275),
+                          ("TAMATTRA", "TANQUE", 450, 225),
+                          ("REINHARDT","TANQUE", 325, 300),
+                          ("ROADHOG", "TANQUE", 700, 0), 
+                          ("SIGMA","TANQUE",350, 200),
+                          ("WINSTON","TANQUE",350,200),
+                          ("ASHE","DANO",200,0),
+                          ("BASTION","DANO",200,100),
+                          ("CASSIDY","DANO",225,0),
+                          ("WIDOWMAKER","DANO",175,0),
+                          ("GENJI","DANO",200,0),
+                          ("TRACER","DANO",150,0),
+                          ("MEI","DANO",250,0),
+                          ("PHARAH","DANO",200,0),
+                          ("REAPER","DANO",250,0);
+                         
                             
 insert into Habilidade values('reaper', 'explosao', 250, 0, 40, 100),
 							 ('mercy', 'raposa', 0, 70, 0, 100);
